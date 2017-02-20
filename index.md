@@ -17,25 +17,8 @@ status: Teaching
 <!-- THE LESSON INFORMATION -->
 
 
-#Data Carpentry {{ page.topic }} for {{ page.domain }}
+#Data Carpentry - Spreadsheets
 =======
-
-Data Carpentry's aim is to teach researchers basic concepts, skills,
-and tools for working with data so that they can get more done in less
-time, and with less pain. The lessons below were designed for those interested
-in working with {{page.domain %}} data in {{page.topic %}}.
-
-
-**Content Contributors: {{page.contributors | join: ', ' %}}**
-
-
-**Lesson Maintainers: {{page.maintainers | join: ', ' %}}**
-
-
-**Lesson status: {{ page.status }}**
-
-### Instructors
-See [Instructor notes](http://datacarpentry.github.io/spreadsheet-ecology-lesson/instructor_notes.html) on how to teach this lesson.
 
 <!--
   [Information on Lesson Status Categories]()
@@ -45,20 +28,13 @@ See [Instructor notes](http://datacarpentry.github.io/spreadsheet-ecology-lesson
 
 ## Lessons:
 
-1. [Introduction](00-intro.html)
-2. [Formatting data](01-format-data.html)
-3. [Common formatting problems](02-common-mistakes.html)
-4. [Dates as data](03-dates-as-data.html)
-5. [Quality control](04-quality-control.html)
-6. [Exporting data](05-exporting-data.html)
-7. [Data Format Caveats](06-data-formats-caveats.html)
-
-
-
-## Data
-
-Data files for the lesson are available here: [{{page.dataurl %}}]({{page.dataurl %}})
-
+1. [Introduction](00-intro.md)
+2. [Formatting data](01-format-data.md)
+3. [Common formatting problems](02-common-mistakes.md)
+4. [Dates as data](03-dates-as-data.md)
+5. [Quality control](04-quality-control.md)
+6. [Exporting data](05-exporting-data.md)
+7. [Data Format Caveats](06-data-formats-caveats.md)
 
 ### Requirements
 
@@ -69,17 +45,5 @@ through this lesson requires working copies of the software described below.
 To most effectively use these materials, please make sure to install everything
 *before* working through this lesson.
 
-
-
-
-{% if page.software == "Python" %}
-{% include pythonSetup.html %}
-{% elsif page.software == "Spreadsheets" %}
-{% include spreadsheetSetup.html %}
-{% elsif page.software == "R" %}
-{% include rSetup.html %}
-{% else %}
-{% include anySetup.html %}
-{% endif %}
 
 <p><strong>Twitter</strong>: @datacarpentry
